@@ -1,0 +1,16 @@
+{
+  "name": "pheno-plus-whitelist",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a small service for interacting with the pheno-plus whitelist",
+  "main": "whitelistcron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "emerson lebleu",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^134.0.0",
+    "node-cron": "^3.0.3"
+  }
+}
