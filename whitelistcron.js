@@ -76,14 +76,23 @@ function writeToJsonFile(data) {
         obj[row[0]] = row[1];
     });
 
-    // Write the object to a JSON file
+    // Write the object to a JSON file: STAGE
     fs.writeFile('/ssd/emerson/pheno-plus-stage/dist/whiteList.json', JSON.stringify(obj), (err) => {
         if (err) {
             console.error(err);
             writeToErrorLog(err);
             return;
         }
-        console.log('whitelist file has been updated');
+        console.log('stage whitelist file has been updated');
+    });
+    // Write the object to a JSON file: PROD 
+    fs.writeFile('/ssd/emerson/pheno-plus-prod/dist/whiteList.json', JSON.stringify(obj), (err) => {
+        if (err) {
+            console.error(err);
+            writeToErrorLog(err);
+            return;
+        }
+        console.log('prod whitelist file has been updated');
     });
 }
 

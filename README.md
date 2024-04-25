@@ -5,7 +5,9 @@ This is a basic background application that reads from a google doc and updates 
 Not committed to version control is the `/secrets` folder which will need to be present in the root of the application and contain the following:
 - `pheno-plus-cred.json`: A json file that should contain valid and appropriately authorized api credentials to be used by the `googleapis` SDK.
 - `error.log`: File to be written to with any errors.
-- `whiteList.json`: Json file to be updated by the application, if it isn't present it will be created on app startup.
+
+User list is updated in the `dist` folder of the appropriate instance this service updates both the main instance and staging instance.
+- Example: `/ssd/emerson/pheno-plus-stage/dist/whiteList.json` is the location that is updated for the staging instance
 
 #### To check or restart the process
 to check the process - a user can call `ps aux | grep 'node whitelistcron.js'`
