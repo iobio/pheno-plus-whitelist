@@ -77,7 +77,7 @@ function writeToJsonFile(data) {
     });
 
     // Write the object to a JSON file
-    fs.writeFile('./secrets/whiteList.json', JSON.stringify(obj), (err) => {
+    fs.writeFile('/ssd/emerson/pheno-plus-stage/dist/whiteList.json', JSON.stringify(obj), (err) => {
         if (err) {
             console.error(err);
             writeToErrorLog(err);
